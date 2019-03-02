@@ -1,0 +1,11 @@
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/bin/Debug/netcoreapp2.2/Intersection.Applications.TestServer.deps.json
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/bin/Debug/netcoreapp2.2/Intersection.Applications.TestServer.runtimeconfig.json
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/bin/Debug/netcoreapp2.2/Intersection.Applications.TestServer.runtimeconfig.dev.json
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/bin/Debug/netcoreapp2.2/Intersection.Applications.TestServer.dll
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/bin/Debug/netcoreapp2.2/Intersection.Applications.TestServer.pdb
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.csprojAssemblyReference.cache
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.csproj.CoreCompileInputs.cache
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.AssemblyInfoInputs.cache
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.AssemblyInfo.cs
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.dll
+/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.TestServer/obj/Debug/netcoreapp2.2/Intersection.Applications.TestServer.pdb

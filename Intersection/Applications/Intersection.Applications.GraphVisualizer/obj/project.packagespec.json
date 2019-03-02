@@ -1,0 +1,51 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/Intersection.Applications.GraphVisualizer.csproj",
+    "projectName": "Intersection.Applications.GraphVisualizer",
+    "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/Intersection.Applications.GraphVisualizer.csproj",
+    "outputPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/opt/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.0, )",
+          "autoReferenced": true
+        },
+        "MonoGame.Content.Builder": {
+          "target": "Package",
+          "version": "[3.7.0.4, )"
+        },
+        "MonoGame.Framework.DesktopGL.Core": {
+          "target": "Package",
+          "version": "[3.7.0.7, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
