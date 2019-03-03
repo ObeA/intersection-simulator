@@ -7,3 +7,12 @@
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.AssemblyInfo.cs
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.dll
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\bin\Debug\netstandard2.0\Intersection.Modules.Communication.Client.deps.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\bin\Debug\netstandard2.0\Intersection.Modules.Communication.Client.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\bin\Debug\netstandard2.0\Intersection.Modules.Communication.Client.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.csprojAssemblyReference.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.csproj.CoreCompileInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.AssemblyInfoInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.AssemblyInfo.cs
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Modules\Intersection.Modules.Communication.Client\obj\Debug\netstandard2.0\Intersection.Modules.Communication.Client.pdb

@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intersection.Applications.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intersection.Applications.Broker", "Applications\Intersection.Applications.Broker\Intersection.Applications.Broker.csproj", "{23AFF27F-5AAC-46AC-808B-9A0CC264DAEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intersection.Applications.GraphVisualizer", "Applications\Intersection.Applications.GraphVisualizer\Intersection.Applications.GraphVisualizer.csproj", "{FA25F173-0B42-4511-9738-00C03EEEF0E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBroker", "Applications\WebBroker\WebBroker.csproj", "{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,7 +21,7 @@ Global
 		{2DD98A4E-0C1B-4399-97B5-B8A96C71536B} = {36BBAC3B-55BE-4EBC-9644-3A19E2115BC1}
 		{2B7CF892-740D-4F79-A75D-2D5F256ABD2A} = {F64EAD5F-13B3-4DB9-9751-C0A4C0EF250D}
 		{23AFF27F-5AAC-46AC-808B-9A0CC264DAEC} = {36BBAC3B-55BE-4EBC-9644-3A19E2115BC1}
-		{FA25F173-0B42-4511-9738-00C03EEEF0E1} = {36BBAC3B-55BE-4EBC-9644-3A19E2115BC1}
+		{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930} = {36BBAC3B-55BE-4EBC-9644-3A19E2115BC1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2B7CF892-740D-4F79-A75D-2D5F256ABD2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,9 +36,9 @@ Global
 		{23AFF27F-5AAC-46AC-808B-9A0CC264DAEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23AFF27F-5AAC-46AC-808B-9A0CC264DAEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23AFF27F-5AAC-46AC-808B-9A0CC264DAEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA25F173-0B42-4511-9738-00C03EEEF0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA25F173-0B42-4511-9738-00C03EEEF0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA25F173-0B42-4511-9738-00C03EEEF0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA25F173-0B42-4511-9738-00C03EEEF0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEA1E51-E83C-4B49-AE7C-EA6C37D87930}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

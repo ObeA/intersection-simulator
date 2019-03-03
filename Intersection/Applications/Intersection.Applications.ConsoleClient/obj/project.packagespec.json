@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/Intersection.Applications.ConsoleClient.csproj",
+    "projectUniqueName": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.ConsoleClient\\Intersection.Applications.ConsoleClient.csproj",
     "projectName": "Intersection.Applications.ConsoleClient",
-    "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/Intersection.Applications.ConsoleClient.csproj",
-    "outputPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/obj/",
+    "projectPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.ConsoleClient\\Intersection.Applications.ConsoleClient.csproj",
+    "outputPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.ConsoleClient\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/opt/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/Intersection.Modules.Communication.Client.csproj": {
-            "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/Intersection.Modules.Communication.Client.csproj"
+          "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Modules\\Intersection.Modules.Communication.Client\\Intersection.Modules.Communication.Client.csproj": {
+            "projectPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Modules\\Intersection.Modules.Communication.Client\\Intersection.Modules.Communication.Client.csproj"
           }
         }
       }

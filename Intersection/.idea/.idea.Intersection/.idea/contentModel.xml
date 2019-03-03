@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_Intersection.1046848978.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\dev\projects\poc-intersection-simulator\Intersection" t="IncludeFlat">
       <e p="Applications" t="Include">
         <e p="Intersection.Applications.Broker" t="IncludeRecursive">
-          <e p="Intersection.Applications.Broker.csproj" t="IncludeRecursive" />
-          <e p="Program.cs" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
+          <e p="Intersection.Applications.Broker.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp2.2" t="Include">
@@ -16,16 +13,16 @@
               </e>
             </e>
           </e>
+          <e p="Program.cs" t="Include" />
         </e>
         <e p="Intersection.Applications.ConsoleClient" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
           <e p="Commands" t="Include">
             <e p="Command.cs" t="Include" />
             <e p="PublishCommand.cs" t="Include" />
             <e p="SubscribeCommand.cs" t="Include" />
           </e>
           <e p="Intersection.Applications.ConsoleClient.csproj" t="IncludeRecursive" />
-          <e p="Program.cs" t="Include" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netcoreapp2.2" t="Include">
@@ -33,39 +30,35 @@
               </e>
             </e>
           </e>
-        </e>
-        <e p="Intersection.Applications.GraphVisualizer" t="IncludeRecursive">
-          <e p="Content" t="Include">
-            <e p="Content.mgcb" t="Include" />
-          </e>
-          <e p="GraphVisualizer.cs" t="Include" />
-          <e p="Graphing" t="Include">
-            <e p="EndpointNode.cs" t="Include" />
-            <e p="Graph.cs" t="Include" />
-            <e p="Node.cs" t="Include" />
-            <e p="SpawnpointNode.cs" t="Include" />
-          </e>
-          <e p="IBatchDrawable.cs" t="Include" />
-          <e p="Intersection.Applications.GraphVisualizer.csproj" t="IncludeRecursive" />
           <e p="Program.cs" t="Include" />
+        </e>
+        <e p="WebBroker" t="IncludeRecursive">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
           <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
-              <e p="netcoreapp2.0" t="Include">
-                <e p="Intersection.Applications.GraphVisualizer.AssemblyInfo.cs" t="Include" />
+              <e p="netcoreapp2.2" t="Include">
+                <e p="WebBroker.AssemblyInfo.cs" t="Include" />
               </e>
             </e>
           </e>
+          <e p="Program.cs" t="Include" />
+          <e p="Properties" t="Include">
+            <e p="launchSettings.json" t="Include" />
+          </e>
+          <e p="Startup.cs" t="Include" />
+          <e p="WebBroker.csproj" t="IncludeRecursive" />
         </e>
       </e>
       <e p="Intersection.sln" t="IncludeFlat" />
       <e p="Modules" t="Include">
         <e p="Intersection.Modules.Communication.Client" t="IncludeRecursive">
           <e p="Abstractions" t="Include" />
+          <e p="bin" t="ExcludeRecursive" />
           <e p="ControllerClient.cs" t="Include" />
           <e p="ControllerClientOptions.cs" t="Include" />
           <e p="Intersection.Modules.Communication.Client.csproj" t="IncludeRecursive" />
-          <e p="bin" t="ExcludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
             <e p="Debug" t="Include">
               <e p="netstandard2.0" t="Include">
@@ -77,5 +70,7 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\Obe\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Obe\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Intersection.876702809.00" t="ExcludeRecursive" />
   </component>
 </project>

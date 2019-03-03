@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/Intersection.Modules.Communication.Client.csproj",
+    "projectUniqueName": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Modules\\Intersection.Modules.Communication.Client\\Intersection.Modules.Communication.Client.csproj",
     "projectName": "Intersection.Modules.Communication.Client",
-    "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/Intersection.Modules.Communication.Client.csproj",
-    "outputPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Modules/Intersection.Modules.Communication.Client/obj/",
+    "projectPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Modules\\Intersection.Modules.Communication.Client\\Intersection.Modules.Communication.Client.csproj",
+    "outputPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Modules\\Intersection.Modules.Communication.Client\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/opt/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netstandard2.0"

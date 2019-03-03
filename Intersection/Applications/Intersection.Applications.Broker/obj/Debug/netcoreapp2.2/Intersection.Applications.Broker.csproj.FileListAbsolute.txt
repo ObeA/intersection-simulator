@@ -9,3 +9,14 @@
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.AssemblyInfo.cs
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\bin\Debug\netcoreapp2.2\Intersection.Applications.Broker.deps.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\bin\Debug\netcoreapp2.2\Intersection.Applications.Broker.runtimeconfig.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\bin\Debug\netcoreapp2.2\Intersection.Applications.Broker.runtimeconfig.dev.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\bin\Debug\netcoreapp2.2\Intersection.Applications.Broker.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\bin\Debug\netcoreapp2.2\Intersection.Applications.Broker.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.csprojAssemblyReference.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.csproj.CoreCompileInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.AssemblyInfoInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.AssemblyInfo.cs
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.Broker\obj\Debug\netcoreapp2.2\Intersection.Applications.Broker.pdb

@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj",
+    "projectUniqueName": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.Broker\\Intersection.Applications.Broker.csproj",
     "projectName": "Intersection.Applications.Broker",
-    "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj",
-    "outputPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.Broker/obj/",
+    "projectPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.Broker\\Intersection.Applications.Broker.csproj",
+    "outputPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.Broker\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/opt/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"

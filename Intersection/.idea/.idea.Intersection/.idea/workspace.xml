@@ -2,16 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0c763bf-455e-4179-8a65-9fa7b97ca706" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Intersection/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/SubscribeCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/EndpointNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Graph.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Node.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/SpawnpointNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/IBatchDrawable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClientOptions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Intersection/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Intersection/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Intersection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Intersection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Debug/netcoreapp2.2/Intersection.Applications.Broker.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/Intersection.Applications.Broker.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Modules.Communication.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Modules.Communication.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Modules.Communication.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/bin/Debug/netcoreapp2.2/Intersection.Modules.Communication.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/Intersection.Applications.ConsoleClient.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Debug/netcoreapp2.0/Intersection.Applications.GraphVisualizer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Debug/netcoreapp2.0/Intersection.Applications.GraphVisualizer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Debug/netcoreapp2.0/Intersection.Applications.GraphVisualizer.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Debug/netcoreapp2.0/Intersection.Applications.GraphVisualizer.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/Intersection.Applications.GraphVisualizer.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intersection.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Intersection.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/bin/Debug/netstandard2.0/Intersection.Modules.Communication.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Debug/netstandard2.0/Intersection.Modules.Communication.Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/Intersection.Modules.Communication.Client.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,48 +69,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-              <folding>
-                <marker date="1551016868538" expanded="true" signature="49:2060" ph="{...}" />
-                <marker date="1551016868538" expanded="false" signature="62:224" ph="..." />
-                <marker date="1551016868538" expanded="true" signature="243:2058" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="346:458" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="599:788" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="931:1274" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1055:1102" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1133:1213" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1330:1934" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1500:1598" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1667:1769" ph="{...}" />
-                <marker date="1551016868538" expanded="true" signature="1985:2052" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71294DA8-EA5A-40E3-BACB-FE566B7234D9/28/452c4d22/Console.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2361">
-              <caret line="419" column="5" lean-forward="true" selection-start-line="419" selection-start-column="5" selection-end-line="419" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/SubscribeCommand.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <marker date="1551017257986" expanded="true" signature="58:623" ph="{...}" />
-                <marker date="1551017257986" expanded="true" signature="71:152" ph="..." />
-                <marker date="1551017257986" expanded="true" signature="197:621" ph="{...}" />
-                <marker date="1551017257986" expanded="true" signature="311:361" ph="{...}" />
-                <marker date="1551017257986" expanded="true" signature="433:615" ph="{...}" />
+                <marker date="1551539462361" expanded="true" signature="58:623" ph="{...}" />
+                <marker date="1551539462361" expanded="false" signature="71:152" ph="..." />
+                <marker date="1551539462361" expanded="true" signature="197:621" ph="{...}" />
+                <marker date="1551539462361" expanded="true" signature="311:361" ph="{...}" />
+                <marker date="1551539462361" expanded="true" signature="433:615" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -72,28 +87,101 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="68">
               <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding>
-                <marker date="1551014171663" expanded="true" signature="58:201" ph="{...}" />
-                <marker date="1551014171663" expanded="true" signature="129:199" ph="{...}" />
+                <marker date="1551539462360" expanded="true" signature="58:201" ph="{...}" />
+                <marker date="1551539462360" expanded="true" signature="129:199" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <marker date="1551539462361" expanded="true" signature="58:497" ph="{...}" />
+                <marker date="1551539462361" expanded="false" signature="71:134" ph="..." />
+                <marker date="1551539462361" expanded="true" signature="177:495" ph="{...}" />
+                <marker date="1551539462361" expanded="true" signature="289:339" ph="{...}" />
+                <marker date="1551539462361" expanded="true" signature="411:489" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Applications/WebBroker/WebBroker.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding>
+                <marker date="1551630020797" expanded="true" signature="42:840" ph="{...}" />
+                <marker date="1551630020797" expanded="false" signature="55:172" ph="..." />
+                <marker date="1551630020797" expanded="true" signature="191:838" ph="{...}" />
+                <marker date="1551630020797" expanded="true" signature="243:832" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Applications/WebBroker/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <marker date="1551630475931" expanded="true" signature="6:93" ph="..." />
+                <marker date="1551630475931" expanded="true" signature="114:454" ph="{...}" />
+                <marker date="1551630475931" expanded="true" signature="141:452" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs">
+        <entry file="file://$PROJECT_DIR$/Applications/WebBroker/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="425">
+              <caret line="25" column="98" lean-forward="true" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
               <folding>
-                <marker date="1551020597713" expanded="true" signature="58:497" ph="{...}" />
-                <marker date="1551020597713" expanded="false" signature="71:134" ph="..." />
-                <marker date="1551020597713" expanded="true" signature="177:495" ph="{...}" />
-                <marker date="1551020597713" expanded="true" signature="289:339" ph="{...}" />
-                <marker date="1551020597713" expanded="true" signature="411:489" ph="{...}" />
+                <marker date="1551630764242" expanded="true" signature="6:187" ph="..." />
+                <marker date="1551630764242" expanded="true" signature="208:1045" ph="{...}" />
+                <marker date="1551630764242" expanded="true" signature="235:1043" ph="{...}" />
+                <marker date="1551630764242" expanded="true" signature="294:357" ph="{...}" />
+                <marker date="1551630764242" expanded="true" signature="580:794" ph="{...}" />
+                <marker date="1551630764242" expanded="true" signature="982:1037" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5CF7623-53E7-4B74-AA11-229D4163668D/b5/a19af121/ServiceCollectionExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -101,75 +189,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClient.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="748">
               <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding>
-                <marker date="1551016728627" expanded="true" signature="51:4880" ph="{...}" />
-                <marker date="1551016728627" expanded="false" signature="64:314" ph="..." />
-                <marker date="1551016728627" expanded="true" signature="363:4878" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="712:1903" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="952:1208" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="1225:1324" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="1990:2353" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="2451:2775" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="2532:2584" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="2664:2765" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="2832:3373" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3073:3149" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3454:3682" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3501:3582" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3726:3846" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3772:3836" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3919:4143" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="3979:4073" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4213:4511" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4260:4348" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4365:4453" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4584:4658" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4730:4789" ph="{...}" />
-                <marker date="1551016728627" expanded="true" signature="4820:4872" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="51:4880" ph="{...}" />
+                <marker date="1551539462399" expanded="false" signature="64:314" ph="..." />
+                <marker date="1551539462399" expanded="true" signature="363:4878" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="712:1903" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="952:1208" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="1225:1324" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="1990:2353" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="2451:2775" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="2532:2584" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="2664:2765" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="2832:3373" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3073:3149" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3454:3682" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3501:3582" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3726:3846" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3772:3836" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3919:4143" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="3979:4073" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4213:4511" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4260:4348" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4365:4453" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4584:4658" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4730:4789" ph="{...}" />
+                <marker date="1551539462399" expanded="true" signature="4820:4872" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/ae/866c08ef/IApplicationMessageReceiver.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d9/2771aad3/IManagedMqttClient.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-              <folding>
-                <marker date="1550583496248" expanded="true" signature="0:402" ph="/* Decompiled with JetBrains decompiler ... */" />
-                <marker date="1550583496248" expanded="true" signature="547:1587" ph="{...}" />
-                <marker date="1550583496248" expanded="true" signature="660:1585" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/cd/1da98baa/ApplicationMessageProcessedEventArgs.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/9e/5737d429/ManagedMqttApplicationMessage.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -180,47 +227,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/6a/242653f9/ManagedMqttClientExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/30/5ac9a77b/MqttNetLogMessage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/cd/1da98baa/ApplicationMessageProcessedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/GraphVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/e0/cff0c17d/MqttNetLogMessagePublishedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/f5/9b81367f/TopicFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/9e/5737d429/ManagedMqttApplicationMessage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d5/24efe7ef/MqttFactoryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.TestPublisher/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/b0/0de232a9/MqttApplicationMessage.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d9/2771aad3/IManagedMqttClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClientOptions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/85/fd1addc9/MqttNetLogger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/ae/866c08ef/IApplicationMessageReceiver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/20/9586e6b5/MqttClientOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/75/e5e2bd02/Game.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C975FEE-D763-4EB3-A0F2-D028EF0A1823/af/df0bf6d8/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/db/1e83ce44/MqttFactory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/38/1d2fe43b/GameServiceContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/da/442f243c/MqttServerOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/03/f8a0dd78/Task.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/e4/f537fac5/ManagedMqttClientOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/30/c00af88e/GameComponentCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/47/4c7657de/IMqttNetLogger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71294DA8-EA5A-40E3-BACB-FE566B7234D9/28/452c4d22/Console.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/6b/4cf16dc4/ContentManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Graph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.TestServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClientOptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Node.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/EndpointNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Graph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/84/046f9b89/SpriteBatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4C4CA5E9-C1F4-4C3F-BB24-E88C94AE5F00/01/862757d4/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.TestServer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/IBatchDrawable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/SpawnpointNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/WebBroker/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/GraphVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5CF7623-53E7-4B74-AA11-229D4163668D/b5/a19af121/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/WebBroker/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/SubscribeCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -233,7 +258,6 @@
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.TestPublisher/Program.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.TestServer/Program.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj" />
-        <option value="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs" />
         <option value="$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClientOptions.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Game1.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/IEzDrawable.cs" />
@@ -248,14 +272,18 @@
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Program.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/SubscribeCommand.cs" />
         <option value="$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs" />
+        <option value="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs" />
+        <option value="$PROJECT_DIR$/Applications/WebBroker/WebBroker.csproj" />
+        <option value="$PROJECT_DIR$/Applications/WebBroker/Program.cs" />
+        <option value="$PROJECT_DIR$/Applications/WebBroker/Startup.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2180" />
-    <option name="y" value="30" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -264,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -281,31 +308,20 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Intersection" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Applications" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Intersection.Applications.ConsoleClient" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Intersection.Applications.Broker" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Intersection" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Applications" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Intersection.Applications.ConsoleClient" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Commands" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Intersection" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Modules" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Intersection" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Modules" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Intersection.Modules.Communication.Client" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="WebBroker" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -329,7 +345,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Client">
+  <component name="RunManager" selected=".NET Project.Unnamed (1)">
     <configuration name="Broker" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Applications/Intersection.Applications.Broker/bin/Debug/netcoreapp2.2/Intersection.Applications.Broker.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -376,6 +392,29 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Unnamed (1)" type="DotNetProject" factoryName=".NET Project" nameIsGenerated="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Applications/WebBroker/bin/Debug/netcoreapp2.2/WebBroker.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Applications/WebBroker" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://0.0.0.0:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Applications/WebBroker/WebBroker.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="DotNetProject" factoryName=".NET Project" nameIsGenerated="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/bin/Debug/netcoreapp2.0/Intersection.Applications.GraphVisualizer.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -401,6 +440,7 @@
     </configuration>
     <list>
       <item itemvalue=".NET Project.Client" />
+      <item itemvalue=".NET Project.Unnamed (1)" />
       <item itemvalue=".NET Project.Unnamed" />
       <item itemvalue=".NET Project.Broker" />
     </list>
@@ -418,11 +458,12 @@
       <workItem from="1550582925690" duration="5201000" />
       <workItem from="1550939132336" duration="3651000" />
       <workItem from="1551013431362" duration="7779000" />
+      <workItem from="1551629946090" duration="1429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16631000" />
+    <option name="totallyTimeSpent" value="18060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,17 +475,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="8" width="1920" height="1044" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27029914" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40655738" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40628386" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -455,7 +498,8 @@
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32896176" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="14" weight="0.32896176" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32827735" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -501,31 +545,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/e4/f537fac5/ManagedMqttClientOptions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/f5/9b81367f/TopicFilter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/e4/f537fac5/ManagedMqttClientOptions.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/f5/9b81367f/TopicFilter.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.TestServer/Intersection.Applications.TestServer.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -536,13 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/20/9586e6b5/MqttClientOptionsBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/20/9586e6b5/MqttClientOptionsBuilder.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.TestPublisher/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -566,61 +585,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/da/442f243c/MqttServerOptionsBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/47/4c7657de/IMqttNetLogger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/db/1e83ce44/MqttFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/85/fd1addc9/MqttNetLogger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/30/5ac9a77b/MqttNetLogMessage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/e0/cff0c17d/MqttNetLogMessagePublishedEventArgs.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1550939485794" expanded="true" signature="42:840" ph="{...}" />
-            <marker date="1550939485794" expanded="true" signature="55:172" ph="..." />
-            <marker date="1550939485794" expanded="true" signature="191:838" ph="{...}" />
-            <marker date="1550939485794" expanded="true" signature="243:832" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/da/442f243c/MqttServerOptionsBuilder.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/47/4c7657de/IMqttNetLogger.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/db/1e83ce44/MqttFactory.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/85/fd1addc9/MqttNetLogger.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/30/5ac9a77b/MqttNetLogMessage.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/e0/cff0c17d/MqttNetLogMessagePublishedEventArgs.cs" />
     <entry file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClientOptions.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -632,34 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d5/24efe7ef/MqttFactoryExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/38/1d2fe43b/GameServiceContainer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/30/c00af88e/GameComponentCollection.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/6b/4cf16dc4/ContentManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d5/24efe7ef/MqttFactoryExtensions.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/38/1d2fe43b/GameServiceContainer.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/30/c00af88e/GameComponentCollection.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/6b/4cf16dc4/ContentManager.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/GraphVisualizer.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -711,13 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/84/046f9b89/SpriteBatch.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/84/046f9b89/SpriteBatch.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Graphing/Node.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -750,20 +690,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4C4CA5E9-C1F4-4C3F-BB24-E88C94AE5F00/01/862757d4/Vector2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/75/e5e2bd02/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4C4CA5E9-C1F4-4C3F-BB24-E88C94AE5F00/01/862757d4/Vector2.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/278D7C4E-E8D0-44FE-B0B2-1F214107358B/75/e5e2bd02/Game.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.GraphVisualizer/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -792,13 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/6a/242653f9/ManagedMqttClientExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/6a/242653f9/ManagedMqttClientExtensions.cs" />
     <entry file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/Intersection.Modules.Communication.Client.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -806,156 +728,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/b0/0de232a9/MqttApplicationMessage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/9e/5737d429/ManagedMqttApplicationMessage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/cd/1da98baa/ApplicationMessageProcessedEventArgs.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d9/2771aad3/IManagedMqttClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <marker date="1550583496248" expanded="true" signature="0:402" ph="/* Decompiled with JetBrains decompiler ... */" />
-            <marker date="1550583496248" expanded="true" signature="547:1587" ph="{...}" />
-            <marker date="1550583496248" expanded="true" signature="660:1585" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/ae/866c08ef/IApplicationMessageReceiver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/03/f8a0dd78/Task.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="2264" column="15" selection-start-line="2264" selection-start-column="15" selection-end-line="2264" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C975FEE-D763-4EB3-A0F2-D028EF0A1823/af/df0bf6d8/Enumerable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="5494" column="14" selection-start-line="5494" selection-start-column="14" selection-end-line="5494" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <marker date="1551014171663" expanded="true" signature="58:201" ph="{...}" />
-            <marker date="1551014171663" expanded="true" signature="129:199" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClient.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <marker date="1551016728627" expanded="true" signature="51:4880" ph="{...}" />
-            <marker date="1551016728627" expanded="false" signature="64:314" ph="..." />
-            <marker date="1551016728627" expanded="true" signature="363:4878" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="712:1903" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="952:1208" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="1225:1324" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="1990:2353" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="2451:2775" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="2532:2584" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="2664:2765" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="2832:3373" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3073:3149" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3454:3682" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3501:3582" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3726:3846" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3772:3836" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3919:4143" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="3979:4073" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4213:4511" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4260:4348" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4365:4453" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4584:4658" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4730:4789" ph="{...}" />
-            <marker date="1551016728627" expanded="true" signature="4820:4872" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71294DA8-EA5A-40E3-BACB-FE566B7234D9/28/452c4d22/Console.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2361">
-          <caret line="419" column="5" lean-forward="true" selection-start-line="419" selection-start-column="5" selection-end-line="419" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/b0/0de232a9/MqttApplicationMessage.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/9e/5737d429/ManagedMqttApplicationMessage.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/cd/1da98baa/ApplicationMessageProcessedEventArgs.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/69F7DBC0-7B0B-47A7-8E3F-3B41F02163AD/d9/2771aad3/IManagedMqttClient.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0CBA824E-B1F0-47F2-8DB4-0A990343853F/ae/866c08ef/IApplicationMessageReceiver.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7AE601DC-949B-4D37-B7CA-0C7C4778B210/03/f8a0dd78/Task.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3C975FEE-D763-4EB3-A0F2-D028EF0A1823/af/df0bf6d8/Enumerable.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71294DA8-EA5A-40E3-BACB-FE566B7234D9/28/452c4d22/Console.cs" />
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="697">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
-            <marker date="1551016868538" expanded="true" signature="49:2060" ph="{...}" />
-            <marker date="1551016868538" expanded="false" signature="62:224" ph="..." />
-            <marker date="1551016868538" expanded="true" signature="243:2058" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="346:458" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="599:788" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="931:1274" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1055:1102" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1133:1213" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1330:1934" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1500:1598" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1667:1769" ph="{...}" />
-            <marker date="1551016868538" expanded="true" signature="1985:2052" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="49:2060" ph="{...}" />
+            <marker date="1551539462362" expanded="false" signature="62:224" ph="..." />
+            <marker date="1551539462362" expanded="true" signature="243:2058" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="346:458" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="599:788" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="931:1274" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1055:1102" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1133:1213" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1330:1934" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1500:1598" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1667:1769" ph="{...}" />
+            <marker date="1551539462362" expanded="true" signature="1985:2052" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/SubscribeCommand.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <marker date="1551017257986" expanded="true" signature="58:623" ph="{...}" />
-            <marker date="1551017257986" expanded="true" signature="71:152" ph="..." />
-            <marker date="1551017257986" expanded="true" signature="197:621" ph="{...}" />
-            <marker date="1551017257986" expanded="true" signature="311:361" ph="{...}" />
-            <marker date="1551017257986" expanded="true" signature="433:615" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="58:623" ph="{...}" />
+            <marker date="1551539462361" expanded="false" signature="71:152" ph="..." />
+            <marker date="1551539462361" expanded="true" signature="197:621" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="311:361" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="433:615" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/Command.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <marker date="1551539462360" expanded="true" signature="58:201" ph="{...}" />
+            <marker date="1551539462360" expanded="true" signature="129:199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/Intersection.Modules.Communication.Client/ControllerClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <marker date="1551539462399" expanded="true" signature="51:4880" ph="{...}" />
+            <marker date="1551539462399" expanded="false" signature="64:314" ph="..." />
+            <marker date="1551539462399" expanded="true" signature="363:4878" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="712:1903" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="952:1208" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="1225:1324" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="1990:2353" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="2451:2775" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="2532:2584" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="2664:2765" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="2832:3373" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3073:3149" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3454:3682" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3501:3582" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3726:3846" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3772:3836" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3919:4143" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="3979:4073" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4213:4511" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4260:4348" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4365:4453" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4584:4658" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4730:4789" ph="{...}" />
+            <marker date="1551539462399" expanded="true" signature="4820:4872" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.ConsoleClient/Commands/PublishCommand.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
-            <marker date="1551020597713" expanded="true" signature="58:497" ph="{...}" />
-            <marker date="1551020597713" expanded="false" signature="71:134" ph="..." />
-            <marker date="1551020597713" expanded="true" signature="177:495" ph="{...}" />
-            <marker date="1551020597713" expanded="true" signature="289:339" ph="{...}" />
-            <marker date="1551020597713" expanded="true" signature="411:489" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="58:497" ph="{...}" />
+            <marker date="1551539462361" expanded="false" signature="71:134" ph="..." />
+            <marker date="1551539462361" expanded="true" signature="177:495" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="289:339" ph="{...}" />
+            <marker date="1551539462361" expanded="true" signature="411:489" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <marker date="1551630020797" expanded="true" signature="42:840" ph="{...}" />
+            <marker date="1551630020797" expanded="false" signature="55:172" ph="..." />
+            <marker date="1551630020797" expanded="true" signature="191:838" ph="{...}" />
+            <marker date="1551630020797" expanded="true" signature="243:832" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/WebBroker/WebBroker.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5CF7623-53E7-4B74-AA11-229D4163668D/b5/a19af121/ServiceCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/Intersection.Applications.Broker/Intersection.Applications.Broker.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/WebBroker/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <marker date="1551630475931" expanded="true" signature="6:93" ph="..." />
+            <marker date="1551630475931" expanded="true" signature="114:454" ph="{...}" />
+            <marker date="1551630475931" expanded="true" signature="141:452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Applications/WebBroker/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="98" lean-forward="true" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
+          <folding>
+            <marker date="1551630764242" expanded="true" signature="6:187" ph="..." />
+            <marker date="1551630764242" expanded="true" signature="208:1045" ph="{...}" />
+            <marker date="1551630764242" expanded="true" signature="235:1043" ph="{...}" />
+            <marker date="1551630764242" expanded="true" signature="294:357" ph="{...}" />
+            <marker date="1551630764242" expanded="true" signature="580:794" ph="{...}" />
+            <marker date="1551630764242" expanded="true" signature="982:1037" ph="{...}" />
           </folding>
         </state>
       </provider>

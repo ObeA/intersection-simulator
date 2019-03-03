@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/Intersection.Applications.GraphVisualizer.csproj",
+    "projectUniqueName": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.GraphVisualizer\\Intersection.Applications.GraphVisualizer.csproj",
     "projectName": "Intersection.Applications.GraphVisualizer",
-    "projectPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/Intersection.Applications.GraphVisualizer.csproj",
-    "outputPath": "/home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.GraphVisualizer/obj/",
+    "projectPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.GraphVisualizer\\Intersection.Applications.GraphVisualizer.csproj",
+    "outputPath": "C:\\dev\\projects\\poc-intersection-simulator\\Intersection\\Applications\\Intersection.Applications.GraphVisualizer\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/opt/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.0"

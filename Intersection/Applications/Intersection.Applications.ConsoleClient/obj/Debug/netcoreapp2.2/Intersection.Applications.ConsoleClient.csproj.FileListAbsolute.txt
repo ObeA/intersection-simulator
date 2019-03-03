@@ -12,3 +12,17 @@
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.csproj.CopyComplete
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.dll
 /home/obe/projects/intersection/poc-intersection-simulator/Intersection/Applications/Intersection.Applications.ConsoleClient/obj/Debug/netcoreapp2.2/Intersection.Applications.ConsoleClient.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.deps.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.runtimeconfig.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.runtimeconfig.dev.json
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Modules.Communication.Client.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\bin\Debug\netcoreapp2.2\Intersection.Modules.Communication.Client.pdb
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.csprojAssemblyReference.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.csproj.CoreCompileInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.AssemblyInfoInputs.cache
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.AssemblyInfo.cs
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.csproj.CopyComplete
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.dll
+C:\dev\projects\poc-intersection-simulator\Intersection\Applications\Intersection.Applications.ConsoleClient\obj\Debug\netcoreapp2.2\Intersection.Applications.ConsoleClient.pdb
