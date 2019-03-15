@@ -19,13 +19,12 @@ public class CommunicationsManager : MonoBehaviour
             BrokerAddress = ip,
             BrokerPort = port,
             EnableConsoleLogging = true,
-            Identifier = "simulation",
+            Identifier = "gruppe-4",
             ReconnectDelay = TimeSpan.FromSeconds(5)
         };
         Client = new ControllerClient(options);
         Debug.Log("Connecting to broker");
         await Client.StartAsync();
         Debug.Log("Connected");
-        await Client.SubscribeAsync("topic", _ => Debug.Log("Jo iets"));
     }
 }
