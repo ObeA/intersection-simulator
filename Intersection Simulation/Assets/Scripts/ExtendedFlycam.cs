@@ -31,7 +31,7 @@ public class ExtendedFlycam : MonoBehaviour
  
 	void Start ()
 	{
-		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.lockState = CursorLockMode.None;
 	}
  
 	void Update ()
@@ -63,7 +63,7 @@ public class ExtendedFlycam : MonoBehaviour
 		if (Input.GetKey (KeyCode.Q)) {transform.position += transform.up * climbSpeed * Time.deltaTime;}
 		if (Input.GetKey (KeyCode.E)) {transform.position -= transform.up * climbSpeed * Time.deltaTime;}
  
-		if (Input.GetKeyDown (KeyCode.End))
+		if (Input.GetKeyDown (KeyCode.Escape))
 		{
 			Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
 		}

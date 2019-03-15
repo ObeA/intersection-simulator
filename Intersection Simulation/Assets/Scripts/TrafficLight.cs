@@ -10,8 +10,23 @@ public class TrafficLight : MonoBehaviour
     public MeshRenderer indicatorObject;
     
     private LogicGroup _logicGroup;
-    public LogicGroup LogicGroup => _logicGroup != null ? _logicGroup : _logicGroup = GetComponentInParent<LogicGroup>();
-    public string Topic => LogicGroup != null ? LogicGroup.topicRoot + topic : topic;
+    private bool _hasProbed = false;
+    public LogicGroup ParentLogicGroup
+    {
+        get
+        {
+            if (_hasProbed)
+            {
+                return _logicGroup;
+            }
+
+            _hasProbed = true;
+            return _logicGroup != null ? _logicGroup : _logicGroup = (transform.parent != null ? transform.parent.GetComponent<LogicGroup>() : null);
+        }
+    }
+    public string Topic => ParentLogicGroup != null 
+        ? ParentLogicGroup.Topic + topic 
+        : topic;
 
     private TrafficLightState _state;
     private bool _isSubscribed;
