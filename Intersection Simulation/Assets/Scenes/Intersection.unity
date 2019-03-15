@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bd5f071cb38734ab2cf44f09c66da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topic: "foot/\x13"
+  topic: foot/
 --- !u!1 &94966319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bd5f071cb38734ab2cf44f09c66da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topic: "1\x13/"
+  topic: 4/
 --- !u!1 &528322406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bd5f071cb38734ab2cf44f09c66da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topic: "cycle/\x13\x13"
+  topic: cycle/
 --- !u!4 &984106812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955592715428115254, guid: c0920e8a1443af14eaf26d1dd1ef5011,
@@ -1788,7 +1788,7 @@ PrefabInstance:
     - target: {fileID: 9204281106173827602, guid: 5521fbfa5d5ce1b45802090b4a0f5088,
         type: 3}
       propertyPath: topic
-      value: "1/\x13"
+      value: 1/
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5521fbfa5d5ce1b45802090b4a0f5088, type: 3}
@@ -3384,7 +3384,7 @@ PrefabInstance:
     - target: {fileID: 9204281106173827602, guid: 5521fbfa5d5ce1b45802090b4a0f5088,
         type: 3}
       propertyPath: topic
-      value: "1/\x13"
+      value: 1/
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5521fbfa5d5ce1b45802090b4a0f5088, type: 3}

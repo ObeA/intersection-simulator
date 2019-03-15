@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Text;
+using UnityEngine;
 
 public class LogicGroup : MonoBehaviour
 {
@@ -20,5 +21,5 @@ public class LogicGroup : MonoBehaviour
             return _logicGroup != null ? _logicGroup : _logicGroup = (transform.parent != null ? transform.parent.GetComponent<LogicGroup>() : null);
         }
     }
-    public string Topic => ParentLogicGroup != null ? ParentLogicGroup.Topic + topic : topic;
+    public string Topic => ParentLogicGroup != null && ParentLogicGroup.Topic != null ? $"{ParentLogicGroup.Topic}{topic}" : topic;
 }

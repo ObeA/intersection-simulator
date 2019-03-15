@@ -20,9 +20,7 @@ public class Sensor : MonoBehaviour
             return _logicGroup != null ? _logicGroup : _logicGroup = (transform.parent != null ? transform.parent.GetComponent<LogicGroup>() : null);
         }
     }
-    public string Topic => ParentLogicGroup != null 
-        ? ParentLogicGroup.Topic + topic 
-        : topic;
+    public string Topic => ParentLogicGroup != null && ParentLogicGroup.Topic != null ? $"{ParentLogicGroup.Topic}{topic}" : topic;
 
     private async void OnTriggerEnter(Collider other)
     {
