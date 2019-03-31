@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using Intersection.Extensions;
 using PathCreation;
 using UnityEngine;
 using Random = System.Random;
@@ -11,48 +13,77 @@ namespace Intersection
     public class PathFollower : MonoBehaviour
     {
         public PathCreator pathCreator;
-        public EndOfPathInstruction endOfPathInstruction;
-        public float speed = 5;
-        public float scale = 1.0f;
+        public float topSpeed = 8;
+        public float timescale = 1.0f;
 
-        private float _speed;
+        private float _targetSpeed;
+        private float _previousSpeed;
+        private float _currentSpeed;
+        
         private float _distanceTravelled;
-        private Collider _lastCollision;
+        private float _acceleration;
+        
+        public float CurrentSpeed => _currentSpeed;
+        public float Acceleration => _acceleration;
 
         private void Start()
         {
-            _speed = speed;
+            enabled = pathCreator != null;
+
+            var t = transform;
+            t.position = pathCreator.path.GetPointAtDistance(0);
+            t.rotation = pathCreator.path.GetRotationAtDistance(0) * Quaternion.Euler(0, 0, 90);
         }
 
-        void Update()
+        private void FixedUpdate()
         {
-            if (pathCreator == null) return;
-            if (_lastCollision == null || !_lastCollision.enabled)
+            UpdateSpeed();
+            
+            var targetPosition = pathCreator.path.GetPointAtDistance(_distanceTravelled, EndOfPathInstruction.Stop);
+            var t = transform;
+            t.LookAt(targetPosition);
+            t.position = targetPosition;
+            _distanceTravelled += _currentSpeed * Time.fixedDeltaTime;
+        }
+
+        private void UpdateSpeed()
+        {
+            if (Mathf.Approximately(_currentSpeed, _targetSpeed))
             {
-                _distanceTravelled += _speed * Time.deltaTime * scale;
-                _lastCollision = null;
+                return;
             }
 
-            var targetPosition = pathCreator.path.GetPointAtDistance(_distanceTravelled, endOfPathInstruction);
-            var targetRotation = pathCreator.path.GetRotationAtDistance(_distanceTravelled, endOfPathInstruction);
-
-            var transform1 = transform;
-            transform1.position = targetPosition;
-            transform1.rotation = targetRotation;
-        }
-
-        private void OnCollisionEnter(Collision other)
-        {
-            if (other.gameObject.GetComponentInParent<TrafficLight>() == null) return;
+            if (Mathf.Abs(_acceleration) < 0.01)
+            {
+                _currentSpeed = _targetSpeed;
+                return;
+            }
             
-            _lastCollision = other.collider;
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
-            _speed = speed * (float) (new Random().NextDouble() * (1.5 - 0.5) + 0.5);
+            var prev = _currentSpeed;
+            _currentSpeed = _currentSpeed + _acceleration * Time.fixedDeltaTime;
+            if (_previousSpeed > _targetSpeed)
+            {
+                _currentSpeed = Mathf.Max(_currentSpeed, _targetSpeed);
+            }
+            else if (_previousSpeed < _targetSpeed)
+            {
+                _currentSpeed = Mathf.Min(_currentSpeed, _targetSpeed);
+            }
+            Debug.Log($"{name}: {prev} -> {_currentSpeed} (d:{_currentSpeed - prev} a:{_acceleration} a:{(_currentSpeed - prev) / Time.fixedDeltaTime} t:{Time.fixedDeltaTime})");
         }
 
-        private void OnCollisionExit(Collision other)
+        public void ChangeSpeed(float newSpeed, float acceleration)
         {
-            _lastCollision = null;
+            if ((Mathf.Approximately(newSpeed, _targetSpeed) && Mathf.Approximately(acceleration, _acceleration)) || Mathf.Abs(acceleration) < 0.001f)
+            {
+                return;
+            }
+            
+            Debug.Log($"{name}: Changed speed {_targetSpeed} -> {newSpeed} ({acceleration}m/s*s {(newSpeed - _targetSpeed) / acceleration} sec)");
+            
+            _previousSpeed = _currentSpeed;
+            _acceleration = acceleration;
+            _targetSpeed = newSpeed;
         }
     }
 }
