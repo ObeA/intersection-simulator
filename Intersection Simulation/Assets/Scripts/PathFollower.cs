@@ -1,10 +1,5 @@
-﻿using System;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using Intersection.Extensions;
-using PathCreation;
+﻿using PathCreation;
 using UnityEngine;
-using Random = System.Random;
 
 namespace Intersection
 {
@@ -14,7 +9,6 @@ namespace Intersection
     {
         public PathCreator pathCreator;
         public float topSpeed = 8;
-        public float timescale = 1.0f;
 
         private float _targetSpeed;
         private float _previousSpeed;
@@ -25,6 +19,7 @@ namespace Intersection
         
         public float CurrentSpeed => _currentSpeed;
         public float Acceleration => _acceleration;
+        public float DistanceTravelled => _distanceTravelled;
 
         private void Start()
         {
@@ -37,6 +32,11 @@ namespace Intersection
 
         private void FixedUpdate()
         {
+            if (_distanceTravelled >= pathCreator.path.length)
+            {
+                Destroy(gameObject);
+            }
+            
             UpdateSpeed();
             
             var targetPosition = pathCreator.path.GetPointAtDistance(_distanceTravelled, EndOfPathInstruction.Stop);
@@ -52,12 +52,6 @@ namespace Intersection
             {
                 return;
             }
-
-            if (Mathf.Abs(_acceleration) < 0.01)
-            {
-                _currentSpeed = _targetSpeed;
-                return;
-            }
             
             var prev = _currentSpeed;
             _currentSpeed = _currentSpeed + _acceleration * Time.fixedDeltaTime;
@@ -69,21 +63,31 @@ namespace Intersection
             {
                 _currentSpeed = Mathf.Min(_currentSpeed, _targetSpeed);
             }
-            Debug.Log($"{name}: {prev} -> {_currentSpeed} (d:{_currentSpeed - prev} a:{_acceleration} a:{(_currentSpeed - prev) / Time.fixedDeltaTime} t:{Time.fixedDeltaTime})");
+
+            _currentSpeed = Mathf.Max(_currentSpeed, 0);
+
+            //Debug.Log($"{name}: {prev} -> {_currentSpeed} (d:{_currentSpeed - prev} a:{_acceleration} a:{(_currentSpeed - prev) / Time.fixedDeltaTime} t:{Time.fixedDeltaTime})");
         }
 
         public void ChangeSpeed(float newSpeed, float acceleration)
         {
-            if ((Mathf.Approximately(newSpeed, _targetSpeed) && Mathf.Approximately(acceleration, _acceleration)) || Mathf.Abs(acceleration) < 0.001f)
+            acceleration = Mathf.Abs(acceleration);
+            if ((Mathf.Approximately(newSpeed, _targetSpeed) && Mathf.Approximately(acceleration, _acceleration)) || acceleration < 0.001f)
             {
                 return;
             }
             
-            Debug.Log($"{name}: Changed speed {_targetSpeed} -> {newSpeed} ({acceleration}m/s*s {(newSpeed - _targetSpeed) / acceleration} sec)");
+            //Debug.Log($"{name}: Changed speed {_targetSpeed} -> {newSpeed} ({acceleration}m/s*s {(newSpeed - _targetSpeed) / acceleration} sec)");
             
             _previousSpeed = _currentSpeed;
-            _acceleration = acceleration;
+            _acceleration = newSpeed > _currentSpeed ? acceleration : -acceleration;
             _targetSpeed = newSpeed;
+        }
+
+        public void ForceSpeed(float newSpeed)
+        {
+            _previousSpeed = _currentSpeed;
+            _currentSpeed = _targetSpeed = newSpeed;
         }
     }
 }

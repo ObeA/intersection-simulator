@@ -14,8 +14,6 @@ public class CommunicationsManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        if (Application.isEditor) return;
-        
         var options = new ControllerClientOptions
         {
             BrokerAddress = ip,

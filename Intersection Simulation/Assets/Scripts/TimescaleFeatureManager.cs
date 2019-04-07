@@ -45,7 +45,7 @@ public class TimescaleFeatureManager : MonoBehaviour
         await communicationsManager.Client.PublishAsync(topic, newValue.ToString(CultureInfo.InvariantCulture));
         foreach (var pathFollower in FindObjectsOfType<PathFollower>())
         {
-            pathFollower.timescale = newValue;
+            throw new NotImplementedException();
         }
     }
 }

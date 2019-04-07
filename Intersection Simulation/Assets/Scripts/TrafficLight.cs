@@ -26,20 +26,39 @@ public class TrafficLight : MonoBehaviour
     }
     public string Topic => ParentLogicGroup != null && ParentLogicGroup.Topic != null ? $"{ParentLogicGroup.Topic}{topic}" : topic;
 
+    private TrafficLightState _newState;
     private TrafficLightState _state;
     private bool _isSubscribed;
+    private float _lastStateChange;
+
+    public TrafficLightState State
+    {
+        get => _state;
+        private set
+        {
+            _lastStateChange = Time.time;
+            _state = value;
+        }
+    }
+
+    public float LastStateChange => _lastStateChange;
 
     private async void Start()
     {
+        Debug.Log($"Subscribing to {Topic}");
         await EnsureSubscribeRegisteredAsync();
     }
 
     private async void Update()
     {
         await EnsureSubscribeRegisteredAsync();
+
+        if (State != _newState)
+        {
+            State = _newState;
+        }
         
-        blockingObject.enabled = _state != TrafficLightState.Green;
-        indicatorObject.material.color = GetColorByState(_state);
+        indicatorObject.material.color = GetColorByState(State);
     }
 
     private async Task EnsureSubscribeRegisteredAsync()
@@ -50,7 +69,7 @@ public class TrafficLight : MonoBehaviour
             state =>
             {
                 Debug.Log($"Received state {state} for {Topic}");
-                _state = (TrafficLightState) int.Parse(state);
+                _newState = (TrafficLightState) int.Parse(state);
             });
         _isSubscribed = true;
     }
@@ -63,8 +82,10 @@ public class TrafficLight : MonoBehaviour
                 return new Color(1, 0.5f, 0);
             case TrafficLightState.Green:
                 return Color.green;
-            default:
+            case TrafficLightState.Red:
                 return Color.red;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(state), state, null);
         }
     }
 

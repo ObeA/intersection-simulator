@@ -72,7 +72,6 @@
     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\PathFromObjects.cs" />
     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\PathSceneTool.cs" />
     <Compile Include="Assets\BezierPathCreator\Examples\Scripts\RoadMeshCreator.cs" />
-    <Compile Include="Assets\Scripts\CarBrain.cs" />
     <Compile Include="Assets\Scripts\CommunicationsManager.cs" />
     <Compile Include="Assets\Scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\Scripts\Extensions\Vector3Extensions.cs" />
@@ -81,6 +80,8 @@
     <Compile Include="Assets\Scripts\Sensor.cs" />
     <Compile Include="Assets\Scripts\TimescaleFeatureManager.cs" />
     <Compile Include="Assets\Scripts\TrafficLight.cs" />
+    <Compile Include="Assets\Scripts\VehicleBrain.cs" />
+    <Compile Include="Assets\Scripts\VehicleSpawner.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
