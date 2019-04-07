@@ -19,7 +19,7 @@ public class CommunicationsManager : MonoBehaviour
             BrokerAddress = ip,
             BrokerPort = port,
             EnableConsoleLogging = true,
-            Identifier = "gruppe-4",
+            Identifier = "gruppo-4",
             ReconnectDelay = TimeSpan.FromSeconds(5)
         };
         Client = new ControllerClient(options);

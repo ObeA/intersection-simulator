@@ -38,7 +38,8 @@ public class VehicleSpawner : MonoBehaviour
         SpawnerSettings setting = null;
         for (var i = 0; i < _spawners.Count; i++)
         {
-            if ((i == 0 && rand >= 0 || rand >= _spawners[i - 1].chance) && rand < _spawners[i].chance)
+            if ((i == 0 || rand >= _spawners.Take(i - 1).Sum(c => c.chance)) 
+                && rand < _spawners.Take(i).Sum(c => c.chance) + _spawners[i].chance)
             {
                 setting = spawners[i];
                 break;
@@ -47,9 +48,11 @@ public class VehicleSpawner : MonoBehaviour
 
         if (setting == null)
         {
-            Debug.Log("This should never happen");
+            Debug.Log($"This should never happen {rand}");
             return;
         }
+
+       
 
         if (setting.vehicle == null)
         {
@@ -58,11 +61,11 @@ public class VehicleSpawner : MonoBehaviour
 
         var bounds = setting.vehicle.GetComponent<Collider>().bounds;
         var extents = bounds.extents;
-        var collides = Physics.CheckBox(_path.bezierPath[0] + Vector3.up / 2, new Vector3(0.05f, 1, 0.25f),
+        var collides = Physics.CheckBox(_path.bezierPath[0] + Vector3.up, new Vector3(0.05f, 1, 0.25f),
             _path.path.GetRotationAtDistance(0, EndOfPathInstruction.Stop));
         if (collides || GetComponentsInChildren<PathFollower>().Any(p => p.DistanceTravelled < extents.magnitude * 2))
         {
-            Debug.Log("Aborted spawning. There is currently a vehicle waiting in the spawn point");
+            Debug.Log($"[{name}] Aborted spawning. There is currently a vehicle waiting in the spawn point");
             return;
         }
         
