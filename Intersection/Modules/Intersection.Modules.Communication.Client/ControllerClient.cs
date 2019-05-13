@@ -44,8 +44,8 @@
 
         private async void OnConnected(object sender, MqttClientConnectedEventArgs e)
         {
-            var subscriberTasks = Task.WhenAll(_subscribers.Keys.Select(topic => _client.SubscribeAsync(topic)));
-            var publisherTasks = Task.WhenAll(_pendingMessages.Select(kvp => _client.PublishAsync(kvp.Topic, kvp.Message)));
+            var subscriberTasks = Task.WhenAll(_subscribers.Keys.Select(topic => _client.SubscribeAsync(topic, _options.QualityOfService)));
+            var publisherTasks = Task.WhenAll(_pendingMessages.Select(kvp => _client.PublishAsync(kvp.Topic, kvp.Message, _options.QualityOfService)));
 
             await Task.WhenAll(subscriberTasks, publisherTasks);
             _pendingMessages.Clear();
@@ -69,6 +69,14 @@
             var clientOptionsBuilder = new MqttClientOptionsBuilder()
                 .WithClientId(_options.Identifier)
                 .WithTcpServer(_options.BrokerAddress, _options.BrokerPort);
+
+            if (_options.LastWillTopic != null)
+            {
+                var message = new MqttApplicationMessageBuilder()
+                    .WithTopic(_options.LastWillTopic)
+                    .WithQualityOfServiceLevel(_options.QualityOfService);
+                clientOptionsBuilder.WithWillMessage(message.Build());
+            }
             if (_options.UseTls)
             {
                 clientOptionsBuilder.WithTls();
@@ -84,7 +92,7 @@
         {
             if (_client.IsConnected)
             {
-                await _client.SubscribeAsync(topic);
+                await _client.SubscribeAsync(topic, _options.QualityOfService);
             }
             AddCallback(topic, callback);
             
@@ -113,7 +121,7 @@
         {
             if (_client.IsConnected)
             {
-                await _client.PublishAsync(topic, message);
+                await _client.PublishAsync(topic, message, _options.QualityOfService);
             }
             else
             {

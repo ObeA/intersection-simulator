@@ -46,12 +46,16 @@ public class VehicleBrain : MonoBehaviour
 
     private bool HandleInDirection(Vector3 direction, float distance)
     {
-        
         if (Physics.Raycast(transform.position, direction, out var hitInfo, distance * 1.5f, -5, QueryTriggerInteraction.Ignore))
         {
             Debug.DrawRay(transform.position, direction * hitInfo.distance, Color.yellow);
 
             var otherFollower = hitInfo.collider.gameObject.GetComponent<PathFollower>();
+            if (hitInfo.collider.gameObject == gameObject)
+            {
+                return false;
+            }
+            
             if (otherFollower != null)
             {
                 HandleHitWithOtherVehicle(otherFollower, hitInfo, distance);

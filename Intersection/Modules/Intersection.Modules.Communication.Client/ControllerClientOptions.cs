@@ -1,3 +1,5 @@
+using MQTTnet.Protocol;
+
 namespace Intersection.Modules.Communication.Client
 {
     using System;
@@ -10,5 +12,8 @@ namespace Intersection.Modules.Communication.Client
         public int BrokerPort { get; set; } = 7001;
         public bool UseTls { get; set; }
         public bool EnableConsoleLogging { get; set; }
+        
+        public string LastWillTopic { get; set; }
+        public MqttQualityOfServiceLevel QualityOfService { get; set; }
     }
 }
