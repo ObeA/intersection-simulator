@@ -29,19 +29,23 @@ public class TrafficLight : MonoBehaviour
     private TrafficLightState _newState;
     private TrafficLightState _state;
     private bool _isSubscribed;
-    private float _lastStateChange;
+    private float _timeSinceGreen;
 
     public TrafficLightState State
     {
         get => _state;
         private set
         {
-            _lastStateChange = Time.time;
+            if (_state == TrafficLightState.Green)
+            {
+                _timeSinceGreen = Time.time;
+            }
+
             _state = value;
         }
     }
 
-    public float LastStateChange => _lastStateChange;
+    public float TimeSinceGreen => _timeSinceGreen;
 
     private async void Start()
     {
