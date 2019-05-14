@@ -8488,17 +8488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f51a0d9e6959194a9d89676fcc207e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 1
   spawners:
   - vehicle: {fileID: 5229617645150206384, guid: 6d213a80d7a7b79458924df49f9e0dbb,
       type: 3}
     minSpeed: 6
     maxSpeed: 8
     chance: 1
-  - vehicle: {fileID: 0}
-    minSpeed: 0
-    maxSpeed: 0
-    chance: 5
 --- !u!114 &1548309452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8522,21 +8518,21 @@ MonoBehaviour:
       - {x: 130.87614, y: 0, z: -9.273238}
       - {x: 125.07556, y: 0, z: -17.796576}
       - {x: 121.601265, y: 0, z: -22.901688}
-      - {x: 119.259346, y: 0.90707207, z: -23.26518}
-      - {x: 116.17383, y: 0.90707207, z: -27.832031}
-      - {x: 107.21111, y: 0.90707207, z: -41.097675}
-      - {x: 96.118614, y: 0, z: -61.537525}
-      - {x: 91.55732, y: 0, z: -68.63924}
+      - {x: 119.82862, y: 0, z: -23.987036}
+      - {x: 116.97955, y: 0, z: -28.705008}
+      - {x: 108.72909, y: 0, z: -42.36754}
+      - {x: 97.05493, y: 0, z: -60.549984}
+      - {x: 92.49364, y: 0, z: -67.651695}
       isClosed: 0
-      localPosition: {x: 0, y: -2.1141033, z: 0}
+      localPosition: {x: 0, y: -1.9839478, z: 0}
       space: 0
       controlMode: 0
       autoControlLength: 0.3
       boundsUpToDate: 1
-      pivot: {x: 119.8811, y: -1.6605673, z: -23.86382}
+      pivot: {x: 120.34926, y: -1.9839478, z: -23.370049}
       bounds:
-        m_Center: {x: 119.8811, y: -1.6605673, z: -23.86382}
-        m_Extent: {x: 28.32378, y: 0.45353603, z: 44.775417}
+        m_Center: {x: 120.34926, y: -1.9839478, z: -23.370049}
+        m_Extent: {x: 27.855621, y: 0, z: 44.281647}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       perAnchorNormalsAngle:
