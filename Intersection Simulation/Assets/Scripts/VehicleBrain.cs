@@ -67,6 +67,12 @@ public class VehicleBrain : MonoBehaviour
             {
                 return true;
             }
+
+            var gate = hitInfo.collider.gameObject.GetComponentInParent<Gate>();
+            if (gate != null && HandleCollisionWithGate(gate, hitInfo, distance))
+            {
+                return true;
+            }
         }
         
         return false;
@@ -129,6 +135,26 @@ public class VehicleBrain : MonoBehaviour
         }
 
         return false;
+    }
+
+    private bool HandleCollisionWithGate(Gate gate, RaycastHit hitInfo, float distance)
+    {
+        if (gate.State == Gate.GateState.Open)
+        {
+            return false;
+        }
+        
+        if (hitInfo.distance < distance * 0.5f)
+        {
+            Vehicle.ForceSpeed(0);
+        }
+        else
+        {
+            Vehicle.ChangeSpeed(0, -Vehicle.CurrentSpeed / (Mathf.Max(hitInfo.distance, distance) / Vehicle.CurrentSpeed));
+        }
+        _state = VehicleState.Waiting;
+        
+        return true;
     }
 
     private enum VehicleState
