@@ -31,7 +31,6 @@ public class CommunicationsManager : MonoBehaviour
         Client = new ControllerClient(options);
         Debug.Log("Connecting to broker");
         await Client.StartAsync();
-        Debug.Log("Connected");
 
         var publishOnConnectTask = Client.PublishAsync($"{teamId}/features/lifecycle/simulator/onconnect", string.Empty);
         var subscribeOnConnectTask = Client.SubscribeAsync(
@@ -44,5 +43,7 @@ public class CommunicationsManager : MonoBehaviour
         );
 
         await Task.WhenAll(publishOnConnectTask, subscribeOnConnectTask, subscribeOnDisconnectTask);
+        
+        Debug.Log("Connected");
     }
 }

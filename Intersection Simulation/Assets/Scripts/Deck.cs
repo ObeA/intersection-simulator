@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Deck : CommunicationMonoBehaviour
 {
-    private DeckState _state;
+    private DeckState _state = DeckState.Closed;
     private DeckState _newState;
     private Animator _animator;
     private bool _isSubscribed;
-    
+    private static readonly int Open = Animator.StringToHash("Open");
+
     // Start is called before the first frame update
     private async void Start()
     {
         _newState = _state;
-        _animator = GetComponent<Animator>();
+        _animator = GetComponentInParent<Animator>();
+        
+        Debug.Log($"Subscribing to {Topic}");
         await EnsureSubscribeRegisteredAsync();
     }
 
     // Update is called once per frame
-    async void Update()
+    private async void Update()
     {
         await EnsureSubscribeRegisteredAsync();
 
@@ -27,8 +30,7 @@ public class Deck : CommunicationMonoBehaviour
             return;
         }
 
-        // _animator.Play( ? "Bridge open" : "Bridge close");
-        transform.position += (_state == DeckState.Closed ? 1 : -1) * Vector3.up;
+        _animator.SetBool(Open, _state == DeckState.Open);
         _state = _newState;
     }
     
