@@ -1,14 +1,16 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Intersection;
 using UnityEngine;
 
 public class Gate : CommunicationMonoBehaviour
 {
-    public GameObject indicatorObject;
+    public Animator beamAnimator;
+    public GameObject blocker;
     
     private bool _isSubscribed;
+    private GateState _newState;
     private GateState _state = GateState.Closed;
+    private static readonly int Open = Animator.StringToHash("Open");
     public GateState State => _state;
 
     private async void Start()
@@ -20,6 +22,15 @@ public class Gate : CommunicationMonoBehaviour
     private async void Update()
     {
         await EnsureSubscribeRegisteredAsync();
+
+        if (_state == _newState)
+        {
+            return;
+        }
+        
+        _state = _newState;
+        beamAnimator.SetBool(Open, _state == GateState.Open);
+        blocker.SetActive(_state == GateState.Open);
     }
 
     private async Task EnsureSubscribeRegisteredAsync()
@@ -30,7 +41,7 @@ public class Gate : CommunicationMonoBehaviour
             state =>
             {
                 Debug.Log($"Received state {state} for {Topic}");
-                _state = (GateState) int.Parse(state);
+                _newState = (GateState) int.Parse(state);
             });
         _isSubscribed = true;
     }

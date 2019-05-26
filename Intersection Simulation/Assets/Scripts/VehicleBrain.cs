@@ -1,5 +1,4 @@
-﻿using System;
-using Intersection;
+﻿using Intersection;
 using PathCreation;
 using UnityEngine;
 
@@ -11,6 +10,24 @@ public class VehicleBrain : MonoBehaviour
     private PathFollower Vehicle => _vehicle != null ? _vehicle : _vehicle = GetComponent<PathFollower>();
 
     private VehicleState _state = VehicleState.Cruising;
+    private Bounds _bounds;
+    private float _distanceFromCenterToSide;
+    private float _distanceFromCenterToFront;
+
+    private float _farFactor = 1.5f;
+    private float _closeFactor = 0.75f;
+    private float _farLookAhead;
+    private float _closeLookAhead;
+
+    void Start()
+    {
+        _bounds = GetComponent<Collider>().bounds;
+        _distanceFromCenterToSide = _bounds.size.y * 0.5f;
+        _distanceFromCenterToFront = _bounds.size.z * 0.5f;
+
+        _farLookAhead = lookAhead * _farFactor;
+        _closeLookAhead = lookAhead * _closeFactor;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,35 +37,42 @@ public class VehicleBrain : MonoBehaviour
             return; // TODO: remove this hack
         }
 
-        if (HandleInDirection(transform.forward, lookAhead))
-        {
-            return;
-        }
+        var t = transform;
+        var right = t.right;
+        var left = -right;
+        var forward = t.forward;
+        var center = t.position;
+        var front = center + _distanceFromCenterToFront * forward;
         
-        var nextPoint = Vehicle.pathCreator.path.GetPointAtDistance(Vehicle.DistanceTravelled + lookAhead * 1.5f, EndOfPathInstruction.Stop);
-        var currentPoint = Vehicle.transform.position;
-        var curvatureVector = (nextPoint - currentPoint).normalized;
+        var nextPoint = Vehicle.pathCreator.path.GetPointAtDistance(Vehicle.DistanceTravelled + _farLookAhead, EndOfPathInstruction.Stop);
+        var curvatureVector = (nextPoint - front).normalized;
         var dot = Vector3.Dot(curvatureVector, transform.forward);
         
-        if (HandleInDirection(Quaternion.Euler(0, 20, 0) * curvatureVector, lookAhead * 0.75f) 
-            || HandleInDirection(curvatureVector, lookAhead))
+        var curveRotation = Quaternion.FromToRotation(forward, curvatureVector);
+        var forwardSideScanDirection = curveRotation * curveRotation * forward;
+        //var leftFront = front + _distanceFromCenterToSide * left;
+        var rightFront = center + _distanceFromCenterToSide * right;
+        
+        if (HandleInDirection(rightFront, forwardSideScanDirection, _farLookAhead)
+            || HandleInDirection(front, forwardSideScanDirection, _farLookAhead))
         {
             return;
         }
         
-        Debug.DrawRay(currentPoint, transform.forward * lookAhead * 1.5f, Color.white);
-        Debug.DrawRay(currentPoint, Quaternion.Euler(0, 20, 0) * curvatureVector * lookAhead * 0.75f, Color.cyan);
-        Debug.DrawRay(currentPoint, curvatureVector * lookAhead * 1.5f, Color.blue);
+        //Debug.DrawRay(leftFront, forwardSideScanDirection, Color.green);
+        Debug.DrawRay(rightFront, forwardSideScanDirection * _farLookAhead, Color.green);
+        //Debug.DrawRay(front, transform.forward * _farLookAhead, Color.white);
+        Debug.DrawRay(front, forwardSideScanDirection * _farLookAhead, Color.blue);
         
-        Vehicle.ChangeSpeed(Vehicle.topSpeed * dot * dot, Vehicle.topSpeed);
+        Vehicle.ChangeSpeed(Mathf.Max(Vehicle.topSpeed * dot * dot, Vehicle.topSpeed * 0.1f), Vehicle.topSpeed);
         _state = VehicleState.Cruising;
     }
 
-    private bool HandleInDirection(Vector3 direction, float distance)
+    private bool HandleInDirection(Vector3 position, Vector3 direction, float distance)
     {
-        if (Physics.Raycast(transform.position, direction, out var hitInfo, distance * 1.5f, -5, QueryTriggerInteraction.Ignore))
+        if (Physics.Raycast(position, direction, out var hitInfo, distance * _farFactor, -5, QueryTriggerInteraction.Ignore))
         {
-            Debug.DrawRay(transform.position, direction * hitInfo.distance, Color.yellow);
+            Debug.DrawRay(position, direction * hitInfo.distance, Color.yellow);
 
             var otherFollower = hitInfo.collider.gameObject.GetComponent<PathFollower>();
             if (hitInfo.collider.gameObject == gameObject)
@@ -155,6 +179,18 @@ public class VehicleBrain : MonoBehaviour
         _state = VehicleState.Waiting;
         
         return true;
+    }
+
+    private class Eyes
+    {
+        public Vector3 left;
+        public Vector3 right;
+
+        public Eyes(Bounds bounds)
+        {
+            left = bounds.min + new Vector3(bounds.size.x, 0);
+            right = bounds.max;
+        }
     }
 
     private enum VehicleState

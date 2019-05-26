@@ -29,9 +29,9 @@ public class Deck : CommunicationMonoBehaviour
         {
             return;
         }
-
-        _animator.SetBool(Open, _state == DeckState.Open);
+        
         _state = _newState;
+        _animator.SetBool(Open, _state == DeckState.Open);
     }
     
     private async Task EnsureSubscribeRegisteredAsync()
