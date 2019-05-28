@@ -17,6 +17,11 @@ public class CommunicationsManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
+        if (!Application.isPlaying)
+        {
+            return;
+        }
+    
         var options = new ControllerClientOptions
         {
             BrokerAddress = ip,
@@ -45,5 +50,11 @@ public class CommunicationsManager : MonoBehaviour
         await Task.WhenAll(publishOnConnectTask, subscribeOnConnectTask, subscribeOnDisconnectTask);
         
         Debug.Log("Connected");
+    }
+
+    private async void OnDestroy()
+    {
+        await Client.StopAsync();
+        Debug.Log("Disconnected");
     }
 }

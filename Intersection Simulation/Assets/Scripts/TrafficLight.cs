@@ -1,30 +1,12 @@
 ﻿using System;
+using Intersection;
 using UnityEngine;
 using Task = System.Threading.Tasks.Task;
 
-public class TrafficLight : MonoBehaviour
+public class TrafficLight : CommunicationMonoBehaviour
 {
-    public CommunicationsManager communicationsManager;
-    public string topic;
     public Collider blockingObject;
     public MeshRenderer indicatorObject;
-    
-    private LogicGroup _logicGroup;
-    private bool _hasProbed = false;
-    public LogicGroup ParentLogicGroup
-    {
-        get
-        {
-            if (_hasProbed)
-            {
-                return _logicGroup;
-            }
-
-            _hasProbed = true;
-            return _logicGroup != null ? _logicGroup : _logicGroup = (transform.parent != null ? transform.parent.GetComponent<LogicGroup>() : null);
-        }
-    }
-    public string Topic => ParentLogicGroup != null && ParentLogicGroup.Topic != null ? $"{ParentLogicGroup.Topic}{topic}" : topic;
 
     private TrafficLightState _newState;
     private TrafficLightState _state;
@@ -63,13 +45,14 @@ public class TrafficLight : MonoBehaviour
         }
         
         indicatorObject.material.color = GetColorByState(State);
+        
     }
 
     private async Task EnsureSubscribeRegisteredAsync()
     {
-        if (_isSubscribed || communicationsManager == null || !communicationsManager.IsInitialized || topic == null) return;
+        if (_isSubscribed || !IsReady) return;
         
-        await communicationsManager.Client.SubscribeAsync(Topic,
+        await CommunicationsManager.Client.SubscribeAsync(Topic,
             state =>
             {
                 Debug.Log($"Received state {state} for {Topic}");

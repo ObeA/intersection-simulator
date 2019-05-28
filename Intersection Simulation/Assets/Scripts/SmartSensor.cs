@@ -43,10 +43,10 @@ public class SmartSensor : CommunicationMonoBehaviour
     private async Task UpdateStateAsync()
     {
         var isHigh = _activeUserCount > 0;
-        if (!communicationsManager.IsInitialized || _lastSentStateIsHigh == isHigh) return;
+        if (!CommunicationsManager.IsInitialized || _lastSentStateIsHigh == isHigh) return;
         
-        Debug.Log($"Updated sensor from {_lastSentStateIsHigh} to {isHigh}");
-        await communicationsManager.Client.PublishAsync(Topic, isHigh ? "1" : "0");
+        Debug.Log($"Updated {Topic} from {_lastSentStateIsHigh} to {isHigh}");
+        await CommunicationsManager.Client.PublishAsync(Topic, isHigh ? "1" : "0");
         _lastSentStateIsHigh = isHigh;
     }
 

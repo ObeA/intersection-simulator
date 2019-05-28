@@ -5,7 +5,7 @@ using UnityEngine;
 public class Deck : CommunicationMonoBehaviour
 {
     private DeckState _state = DeckState.Closed;
-    private DeckState _newState;
+    private DeckState _newState = DeckState.Closed;
     private Animator _animator;
     private bool _isSubscribed;
     private static readonly int Open = Animator.StringToHash("Open");

@@ -142,7 +142,7 @@ public class VehicleBrain : MonoBehaviour
                 return false;
             case TrafficLight.TrafficLightState.Red:
             case TrafficLight.TrafficLightState.Transitioning when (Time.time - trafficLight.TimeSinceGreen) > 2:
-                if (hitInfo.distance < distance * 0.5f)
+                if (hitInfo.distance < distance * 0.25f)
                 {
                     Vehicle.ForceSpeed(0);
                 }

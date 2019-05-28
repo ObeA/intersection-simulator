@@ -30,7 +30,10 @@ public class Gate : CommunicationMonoBehaviour
         
         _state = _newState;
         beamAnimator.SetBool(Open, _state == GateState.Open);
-        blocker.SetActive(_state == GateState.Open);
+        if (blocker != null)
+        {
+            blocker.SetActive(_state == GateState.Closed);
+        }
     }
 
     private async Task EnsureSubscribeRegisteredAsync()
