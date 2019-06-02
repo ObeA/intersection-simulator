@@ -1,4 +1,5 @@
-﻿using PathCreation;
+﻿using System;
+using PathCreation;
 using UnityEngine;
 
 namespace Intersection
@@ -38,12 +39,14 @@ namespace Intersection
             }
             
             UpdateSpeed();
+
+            _distanceTravelled += _currentSpeed * Time.fixedDeltaTime;
             
             var targetPosition = pathCreator.path.GetPointAtDistance(_distanceTravelled, EndOfPathInstruction.Stop);
+            var targetPosition1 = pathCreator.path.GetPointAtDistance(Mathf.Min(_distanceTravelled + 0.1f, pathCreator.path.length), EndOfPathInstruction.Stop);
             var t = transform;
-            t.LookAt(targetPosition);
+            t.LookAt(targetPosition1);
             t.position = targetPosition;
-            _distanceTravelled += _currentSpeed * Time.fixedDeltaTime;
         }
 
         private void UpdateSpeed()
@@ -53,7 +56,6 @@ namespace Intersection
                 return;
             }
             
-            var prev = _currentSpeed;
             _currentSpeed = _currentSpeed + _acceleration * Time.fixedDeltaTime;
             if (_previousSpeed > _targetSpeed)
             {

@@ -40,7 +40,7 @@ public class SpawnZone : MonoBehaviour
         }
 
         var tries = 10;
-        while (tries-- >= 0 && !_children[Random.Range(0, _children.Count - 1)].Spawn())
+        while (tries-- >= 0 && !_children[Random.Range(0, _children.Count)].Spawn())
             ;
     }
 
