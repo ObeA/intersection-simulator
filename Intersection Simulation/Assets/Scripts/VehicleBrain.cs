@@ -1,11 +1,13 @@
-﻿using Intersection;
+﻿using System;
+using Intersection;
 using PathCreation;
 using UnityEngine;
 
 public class VehicleBrain : MonoBehaviour
 {
     public float lookAhead;
-    
+    public bool ignoreOtherRoutes;
+
     private PathFollower _vehicle;
     private PathFollower Vehicle => _vehicle != null ? _vehicle : _vehicle = GetComponent<PathFollower>();
 
@@ -18,6 +20,8 @@ public class VehicleBrain : MonoBehaviour
     private float _closeFactor = 0.75f;
     private float _farLookAhead;
     private float _closeLookAhead;
+
+    private float _yieldCount = 0;
 
     void Start()
     {
@@ -39,38 +43,43 @@ public class VehicleBrain : MonoBehaviour
 
         var t = transform;
         var right = t.right;
-        var left = -right;
         var forward = t.forward;
         var center = t.position;
         var front = center + _distanceFromCenterToFront * forward;
-        
-        var nextPoint = Vehicle.pathCreator.path.GetPointAtDistance(Vehicle.DistanceTravelled + _farLookAhead, EndOfPathInstruction.Stop);
+
+        var nextPoint =
+            Vehicle.pathCreator.path.GetPointAtDistance(
+                Vehicle.DistanceTravelled + _farLookAhead,
+                EndOfPathInstruction.Stop
+            );
         var curvatureVector = (nextPoint - front).normalized;
         var dot = Vector3.Dot(curvatureVector, transform.forward);
-        
+
         var curveRotation = Quaternion.FromToRotation(forward, curvatureVector);
         var forwardSideScanDirection = curveRotation * curveRotation * forward;
         //var leftFront = front + _distanceFromCenterToSide * left;
         var rightFront = center + _distanceFromCenterToSide * right;
-        
-        if (HandleInDirection(rightFront, forwardSideScanDirection, _farLookAhead)
-            || HandleInDirection(front, forwardSideScanDirection, _farLookAhead))
+        var rightScanDirection = Quaternion.AngleAxis(50, Vector3.up) * forward;
+
+        if (HandleInDirection(front, forward, lookAhead)
+            // || HandleInDirection(rightFront, rightScanDirection, _farLookAhead)
+            || HandleInDirection(front, forwardSideScanDirection, lookAhead))
         {
             return;
         }
-        
-        //Debug.DrawRay(leftFront, forwardSideScanDirection, Color.green);
-        Debug.DrawRay(rightFront, forwardSideScanDirection * _farLookAhead, Color.green);
-        //Debug.DrawRay(front, transform.forward * _farLookAhead, Color.white);
-        Debug.DrawRay(front, forwardSideScanDirection * _farLookAhead, Color.blue);
-        
+
+        Debug.DrawRay(front, forward * lookAhead, Color.white);
+        //Debug.DrawRay(rightFront, rightScanDirection * _farLookAhead, Color.green);
+        Debug.DrawRay(front, forwardSideScanDirection * lookAhead, Color.blue);
+
         Vehicle.ChangeSpeed(Mathf.Max(Vehicle.topSpeed * dot * dot, Vehicle.topSpeed * 0.1f), Vehicle.topSpeed);
         _state = VehicleState.Cruising;
     }
 
     private bool HandleInDirection(Vector3 position, Vector3 direction, float distance)
     {
-        if (Physics.Raycast(position, direction, out var hitInfo, distance * _farFactor, -5, QueryTriggerInteraction.Ignore))
+        if (Physics.Raycast(position, direction, out var hitInfo, distance * _farFactor, -5,
+            QueryTriggerInteraction.Ignore))
         {
             Debug.DrawRay(position, direction * hitInfo.distance, Color.yellow);
 
@@ -79,10 +88,14 @@ public class VehicleBrain : MonoBehaviour
             {
                 return false;
             }
-            
+
             if (otherFollower != null)
             {
-                HandleHitWithOtherVehicle(otherFollower, hitInfo, distance);
+                if (!ignoreOtherRoutes || Vehicle.transform.parent.name == otherFollower.transform.parent.name)
+                {
+                    HandleHitWithOtherVehicle(otherFollower, hitInfo, distance);
+                }
+
                 return true;
             }
 
@@ -98,7 +111,7 @@ public class VehicleBrain : MonoBehaviour
                 return true;
             }
         }
-        
+
         return false;
     }
 
@@ -110,17 +123,24 @@ public class VehicleBrain : MonoBehaviour
 
     private void HandleHitWithOtherVehicle(PathFollower follower, RaycastHit hitInfo, float distance)
     {
-        if (hitInfo.distance < distance * 0.5f && (follower.Acceleration <= 0 || Mathf.Approximately(follower.CurrentSpeed, 0)))
+        if (hitInfo.distance < distance * 0.1f)
+        {
+            Vehicle.ForceSpeed(0);
+        }
+        else if (hitInfo.distance < distance * 0.5f &&
+            (follower.Acceleration <= 0 || Mathf.Approximately(follower.CurrentSpeed, 0)))
         {
             Vehicle.ForceSpeed(follower.CurrentSpeed);
         }
         else if (_vehicle.CurrentSpeed > follower.CurrentSpeed)
         {
-            Vehicle.ChangeSpeed(follower.CurrentSpeed, -Vehicle.CurrentSpeed / (hitInfo.distance / Vehicle.CurrentSpeed));
+            Vehicle.ChangeSpeed(follower.CurrentSpeed,
+                -Vehicle.CurrentSpeed / (hitInfo.distance / Vehicle.CurrentSpeed));
         }
         else if (hitInfo.distance > distance)
         {
-            Vehicle.ChangeSpeed(Mathf.Min(follower.CurrentSpeed, Vehicle.topSpeed), Mathf.Min(follower.Acceleration, Vehicle.topSpeed));
+            Vehicle.ChangeSpeed(Mathf.Min(follower.CurrentSpeed, Vehicle.topSpeed),
+                Mathf.Min(follower.Acceleration, Vehicle.topSpeed));
         }
         else if (hitInfo.distance > 0.5f)
         {
@@ -148,7 +168,8 @@ public class VehicleBrain : MonoBehaviour
                 }
                 else
                 {
-                    Vehicle.ChangeSpeed(0, -Vehicle.CurrentSpeed / (Mathf.Max(hitInfo.distance, distance) / Vehicle.CurrentSpeed));
+                    Vehicle.ChangeSpeed(0,
+                        -Vehicle.CurrentSpeed / (Mathf.Max(hitInfo.distance, distance) / Vehicle.CurrentSpeed));
                 }
 
                 _state = VehicleState.Waiting;
@@ -167,30 +188,20 @@ public class VehicleBrain : MonoBehaviour
         {
             return false;
         }
-        
+
         if (hitInfo.distance < distance * 0.5f)
         {
             Vehicle.ForceSpeed(0);
         }
         else
         {
-            Vehicle.ChangeSpeed(0, -Vehicle.CurrentSpeed / (Mathf.Max(hitInfo.distance, distance) / Vehicle.CurrentSpeed));
+            Vehicle.ChangeSpeed(0,
+                -Vehicle.CurrentSpeed / (Mathf.Max(hitInfo.distance, distance) / Vehicle.CurrentSpeed));
         }
+
         _state = VehicleState.Waiting;
-        
+
         return true;
-    }
-
-    private class Eyes
-    {
-        public Vector3 left;
-        public Vector3 right;
-
-        public Eyes(Bounds bounds)
-        {
-            left = bounds.min + new Vector3(bounds.size.x, 0);
-            right = bounds.max;
-        }
     }
 
     private enum VehicleState

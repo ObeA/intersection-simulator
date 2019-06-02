@@ -82,5 +82,10 @@ PrefabInstance:
       propertyPath: lookAhead
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 3511531805212520553, guid: 200be3eb64ac8614484bee796f2e28ee,
+        type: 3}
+      propertyPath: ignoreOtherRoutes
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 200be3eb64ac8614484bee796f2e28ee, type: 3}

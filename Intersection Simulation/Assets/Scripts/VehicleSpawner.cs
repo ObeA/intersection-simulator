@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using PathCreation;
@@ -9,29 +10,34 @@ using Random = UnityEngine.Random;
 public class VehicleSpawner : MonoBehaviour
 {
     public float timeBetweenSpawns;
+    public SpawnZone spawnZone;
     public SpawnerSettings[] spawners;
 
     private List<SpawnerSettings> _spawners;
     private float _lastSpawn;
     private PathCreator _path => GetComponent<PathCreator>() ?? throw new Exception("Should have a path");
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         _spawners = spawners.OrderBy(s => s.chance).ToList();
-        _lastSpawn = float.MinValue;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        var time = Time.time;
-        if (time - _lastSpawn < timeBetweenSpawns)
+        if (GetComponentInParent<SpawnZone>() == null)
         {
-            return;
+            StartCoroutine(SpawnAtRate());
         }
-        _lastSpawn = time;
+    }
 
+    private IEnumerator SpawnAtRate()
+    {
+        Spawn();
+        yield return new WaitForSeconds(timeBetweenSpawns);
+    }
+
+    public bool Spawn()
+    {
         var totalRandom = _spawners.Sum(s => s.chance);
         var rand = Random.Range(0, totalRandom);
 
@@ -49,24 +55,18 @@ public class VehicleSpawner : MonoBehaviour
         if (setting == null)
         {
             Debug.Log($"This should never happen {rand}");
-            return;
+            return false;
         }
-
-       
 
         if (setting.vehicle == null)
         {
-            return;
+            return true;
         }
 
-        var bounds = setting.vehicle.GetComponent<Collider>().bounds;
-        var extents = bounds.extents;
-        var collides = Physics.CheckBox(_path.bezierPath[0] + Vector3.up, new Vector3(0.05f, 1, 0.25f),
-            _path.path.GetRotationAtDistance(0, EndOfPathInstruction.Stop));
-        if (collides || GetComponentsInChildren<PathFollower>().Any(p => p.DistanceTravelled < extents.magnitude * 2))
+        if ((spawnZone != null && !spawnZone.IsClear) || HasCloseSibling(setting))
         {
-            Debug.Log($"[{name}] Aborted spawning. There is currently a vehicle waiting in the spawn point");
-            return;
+            Debug.Log($"[{name}] Aborted spawning. There is currently a vehicle waiting in the spawn zone");
+            return false;
         }
         
         var vehicle = Instantiate(setting.vehicle, transform);
@@ -75,6 +75,19 @@ public class VehicleSpawner : MonoBehaviour
         follower.pathCreator = _path;
         follower.topSpeed = Random.Range(setting.minSpeed, setting.maxSpeed);
         vehicle.SetActive(true);
+
+        return true;
+    }
+
+    private bool HasCloseSibling(SpawnerSettings setting)
+    {
+        var bounds = setting.vehicle.GetComponent<Collider>().bounds;
+        var extents = bounds.extents;
+        var collides = Physics.CheckBox(_path.bezierPath[0] + Vector3.up, new Vector3(0.05f, 1, 0.25f),
+            _path.path.GetRotationAtDistance(0, EndOfPathInstruction.Stop));
+
+        return collides || GetComponentsInChildren<PathFollower>()
+                   .Any(p => p.DistanceTravelled < extents.magnitude * 2);
     }
 
     [Serializable]

@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAhead: 0.5
+  ignoreOtherRoutes: 1
 --- !u!54 &173023632240623512
 Rigidbody:
   m_ObjectHideFlags: 0
