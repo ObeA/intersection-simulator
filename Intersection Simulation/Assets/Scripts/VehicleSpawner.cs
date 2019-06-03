@@ -32,8 +32,11 @@ public class VehicleSpawner : MonoBehaviour
 
     private IEnumerator SpawnAtRate()
     {
-        Spawn();
-        yield return new WaitForSeconds(timeBetweenSpawns);
+        while (true)
+        {
+            Spawn();
+            yield return new WaitForSeconds(timeBetweenSpawns);
+        }
     }
 
     public bool Spawn()
@@ -44,7 +47,7 @@ public class VehicleSpawner : MonoBehaviour
         SpawnerSettings setting = null;
         for (var i = 0; i < _spawners.Count; i++)
         {
-            if ((i == 0 || rand >= _spawners.Take(i - 1).Sum(c => c.chance)) 
+            if ((i == 0 || rand >= _spawners.Take(i - 1).Sum(c => c.chance))
                 && rand < _spawners.Take(i).Sum(c => c.chance) + _spawners[i].chance)
             {
                 setting = spawners[i];
@@ -68,7 +71,7 @@ public class VehicleSpawner : MonoBehaviour
             Debug.Log($"[{name}] Aborted spawning. There is currently a vehicle waiting in the spawn zone");
             return false;
         }
-        
+
         var vehicle = Instantiate(setting.vehicle, transform);
         vehicle.SetActive(false);
         var follower = vehicle.AddComponent<PathFollower>();

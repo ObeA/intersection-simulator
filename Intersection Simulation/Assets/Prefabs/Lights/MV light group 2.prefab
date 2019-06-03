@@ -243,11 +243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586630731405935225}
     m_Modifications:
-    - target: {fileID: 3707245295913506229, guid: 1a814162990a52e439a4ec10e15729b8,
-        type: 3}
-      propertyPath: m_Name
-      value: Sensor
-      objectReference: {fileID: 0}
     - target: {fileID: 3709915673882490691, guid: 1a814162990a52e439a4ec10e15729b8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,6 +298,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3707245295913506229, guid: 1a814162990a52e439a4ec10e15729b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Sensor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a814162990a52e439a4ec10e15729b8, type: 3}
 --- !u!4 &2965711555067773806 stripped
@@ -318,15 +318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1586630731405935225}
     m_Modifications:
-    - target: {fileID: 3707245295913506229, guid: 1a814162990a52e439a4ec10e15729b8,
-        type: 3}
-      propertyPath: m_Name
-      value: Sensor (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3709915673882490691, guid: 1a814162990a52e439a4ec10e15729b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.72
+      value: -7.01
       objectReference: {fileID: 0}
     - target: {fileID: 3709915673882490691, guid: 1a814162990a52e439a4ec10e15729b8,
         type: 3}
@@ -382,6 +377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7500005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707245295913506229, guid: 1a814162990a52e439a4ec10e15729b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Sensor (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5044984500167628056, guid: 1a814162990a52e439a4ec10e15729b8,
         type: 3}
